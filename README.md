@@ -40,9 +40,7 @@ The purpose: provide objective proof of care without cameras, surveillance, or m
 8. LED Feedback System  
 9. Legal and Regulatory Benefits  
 10. Hardware Architecture  
-11. Installation Instructions  
-12. Directory Structure  
-13. Future Expansion
+
 
 ---------------------------------------------------------------------
 
