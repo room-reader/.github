@@ -272,41 +272,17 @@ Quote suitable for court or audit:
 
 ## In-Room Device Structure
 ```
-| Green LED Red LED  White LED |
+
 |                              |
 |  PN532 NFC Reader            |
 |                              |
 |        ESP32 DevKit          |
-|                              |
+| Green LED Red LED  White LED |
 |  USB Power Out Bottom        |
 ```
 
 ---------------------------------------------------------------------
 
-# 11. Installation Instructions
-
-## Hardware Steps
-
-1. Mount enclosures at:
-   - 5 ft inside doorway  
-   - bedside  
-   - optional bathroom
-
-2. Install ESP32 inside enclosure.
-
-3. Mount PN532 antenna behind front panel.
-
-4. Drill three 5 mm LED holes.
-
-5. Connect:
-   - PN532 SDA → GPIO 21  
-   - PN532 SCL → GPIO 22  
-   - Green LED → GPIO 4  
-   - Red LED → GPIO 16  
-   - 220 ohm resistors to ground  
-   - USB cable to ESP32, routing out the bottom
-
-6. Plug ESP32 into wall USB adapter.
 
 # Final Note
 
