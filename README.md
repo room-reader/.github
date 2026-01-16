@@ -1,3 +1,8 @@
+<p align="center">
+  <img width="154" height="254" alt="room-reader"
+       src="https://github.com/user-attachments/assets/82a6c050-2c0b-4353-9ed0-b309e66433a2" />
+</p>
+
 # Room-Reader
 Room-level care verification for assisted living, memory care, and nursing homes.  
 Offline-first. Secure. Staff-friendly. Legally defensible. No subscriptions.
@@ -257,13 +262,13 @@ Quote suitable for court or audit:
 ```
 [ESP32 Reader] ––
 [ESP32 Reader] —– >  Wi-Fi  ––> [Raspberry Pi Server]
-[ESP32 Reader] ––/                      |
-|
-[SQLite DB]
-|
-Optional Sync
-|
-[Google Sheets]
+[ESP32 Reader] ––                    |
+                                     |
+                                 [SQLite DB]
+                                     |
+                                Optional Sync
+                                      |
+                                [Google Sheets]
 
 ```
 
@@ -305,65 +310,10 @@ Optional Sync
 
 6. Plug ESP32 into wall USB adapter.
 
-## Software Steps
-
-1. Flash ESP32 firmware from `esp32/firmware`.
-2. Install Pi backend using:
-   pip install -r requirements.txt
-3. Initialize the database:
-    python3 init_db.py
-4. Start FastAPI server:
-   uvicorn server:app –host 0.0.0.0 –port 8000
-5. Configure Google Sheets sync:
- python3 sync_sheets.py
-
----------------------------------------------------------------------
-
-# 12. Directory Structure
-```
-room-reader/
-│
-├── esp32/
-│   ├── firmware/
-│   ├── wiring_diagrams/
-│   └── config/
-│
-├── server/
-│   ├── fastapi/
-│   ├── database/
-│   ├── models/
-│   ├── routes/
-│   └── sync_sheets.py
-│
-├── docs/
-│   ├── installation/
-│   ├── hardware/
-│   └── legal/
-│
-├── examples/
-│   └── sample_care_logs/
-│
-└── README.md
-```
-
----------------------------------------------------------------------
-
-# 13. Future Expansion
-
-- BLE presence (optional)
-- motion sensors
-- door-open sensors
-- LoRaWAN for campuses
-- thermal printer shift summaries
-- corporate dashboard integrations
-
-Room-Reader remains intentionally simple while supporting advanced use cases.
-
----------------------------------------------------------------------
-
 # Final Note
 
 Facilities get sued for being unable to prove that care was provided.  
 Room-Reader solves that problem for under $100 per room, with zero recurring costs, and protects staff, residents, and administrative leadership simultaneously.
+
 
 
